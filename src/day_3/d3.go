@@ -85,13 +85,13 @@ func main() {
 
 		if avg_totals > .50 {
 
-			gamma[len(totals) - i - 1] = 1
-			epsilon[len(totals) - i - 1] = 0
+			gamma[i] = 1
+			epsilon[i] = 0
 
 		} else {
 
-			gamma[len(totals) - i - 1] = 0
-			epsilon[len(totals) - i - 1] = 1
+			gamma[i] = 0
+			epsilon[i] = 1
 		}
 	}
 
